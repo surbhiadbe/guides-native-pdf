@@ -1,0 +1,3 @@
+How to tell Native PDF to output its chapter numbers so that the PDF output shows them on the bookmarks tab? 
+
+This can be achieved by adding  `-ro-bookmark-label: content(before) content(text);`

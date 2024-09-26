@@ -1,0 +1,19 @@
+/*
+Let's say you have made h1 as autonumber for your chapter titles to be autonumbered. Then you can add -ro-bookmark-label to it.
+*/
+
+h1 {
+    font-size: 24pt;
+    --autonumber: autonumber;
+    margin-left: calc(var(--list-indent) + var(--prefix-size) + var(--prefix-gap));
+    margin-top: calc(var(--vertical-spacing) / 2);
+    margin-bottom: calc(var(--vertical-spacing) / 2);
+    --prefix-size: 24px;
+    --prefix-fixed-size: 0;
+    --prefix-gap: 4px;
+    --vertical-spacing: 0px;
+    --list-indent: 0px;
+    counter-reset: h21 0;
+    position: relative;
+    -ro-bookmark-label: content(before) content(text);
+  }
