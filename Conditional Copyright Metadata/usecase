@@ -1,0 +1,6 @@
+Many times copyright information is pulled from the metadata of the map/bookmap. However, sometimes a second copyright statement for external publishes can be added.
+How to pull a specific <copyright> or <copyholder> based on conditional output. e.g. using one for internal documents and one for external documents.
+
+Answer:
+You can create a ditaval file with conditions to include for one copyright and exclude for another. You can apply the condition tags to both <copyright> as needed. Then in page layout of PDF Template you can insert it as "//copyright[1]/copyrholder". In Native PDF preset , select the ditaval file you created above. Now generated PDF will have copyright based on the conditions you have applied.
+
